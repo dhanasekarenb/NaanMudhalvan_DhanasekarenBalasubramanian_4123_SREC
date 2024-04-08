@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mewsick</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS using django -->
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'index.css'%}">
+
+</head>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Mewsick</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'signup' %}">Sign up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about'%}">About-us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'service'%}">Service</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<!-- Main content -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+            <!-- Audio -->
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'IMG\die for you.jpg' %}" alt="Die For You">
+                        <div class="card-body">
+                            <audio controls>
+                                <source src="{% static 'song\Die For You.mp3' %}" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static '\IMG\ranagrade.jpg' %}" alt="Renegade">
+                        <div class="card-body">
+                            <audio controls>
+                                <source src="{% static 'song\RENEGADE.mp3' %}" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'IMG\the perfect Girl.jpg' %}" alt="The Perfect Girl">
+                        <div class="card-body">
+                            <audio controls>
+                                <source src="{% static 'song\The Perfect Girl.mp3' %}" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'IMG\time in the bottle.jpg' %}" alt="Time in a Bottle">
+                        <div class="card-body">
+                            <audio controls>
+                                <source src="{% static 'song\Time in a Bottle.mp3' %}" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html> 

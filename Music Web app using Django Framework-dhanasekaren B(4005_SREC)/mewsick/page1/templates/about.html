@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mewsick</title>
+    <!-- Include any necessary CSS files here -->
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'about-us.css'%}">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'signup' %}">Sign up</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li ><a href="{% url 'about'%}">About-us</a></li>
+                <li ><a href="{% url 'service'%}">Service</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <h1>Welcome to Mewsick</h1>
+            <p>Your ultimate destination for discovering and enjoying music.</p>
+            <p>At Mewsick, we're passionate about connecting music lovers with the tunes that resonate with their souls. Our journey began with a simple vision: to create a platform where music enthusiasts could explore, share, and immerse themselves in the melodies that move them.</p>
+            <p>Driven by our love for music and fueled by innovation, we've curated an experience that goes beyond just streaming songs. From handpicked playlists to personalized recommendations, we're here to guide you through a musical journey tailored to your tastes and preferences.</p>
+            <p>But Mewsick isn't just about discovering new artists or genres; it's about creating connections, fostering communities, and celebrating the universal language of music. Whether you're an aspiring artist looking for exposure or a seasoned listener seeking fresh sounds, Mewsick is your go-to destination.</p>
+            <p>Join us as we embark on this melodic adventure together. Let's make music more than just a background noise; let's make it an integral part of our lives.</p>
+            <p>Welcome to Mewsick, where every beat counts.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mewsick. All rights reserved.</p>
+    </footer>
+</body>
+</html>

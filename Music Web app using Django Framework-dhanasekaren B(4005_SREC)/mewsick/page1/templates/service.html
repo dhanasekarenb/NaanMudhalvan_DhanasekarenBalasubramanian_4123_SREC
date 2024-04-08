@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mewsick - Services</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'service.css'%}">
+</head>
+<body>
+    <header>
+        <h1>Mewsick</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'signup' %}">Sign up</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li ><a href="{% url 'about'%}">About-us</a></li>
+                <li ><a href="{% url 'service'%}">Service</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Error Resolution</h3>
+                <p>Encountering errors while using our platform? Our dedicated support team is here to help you resolve any technical issues you may face.</p>
+            </div>
+            <div class="service">
+                <h3>Song Playback Assistance</h3>
+                <p>If you're having trouble playing songs on our platform, our support team can assist you in troubleshooting playback issues and ensuring you enjoy uninterrupted music.</p>
+            </div>
+            <div class="service">
+                <h3>Song Copyright Assistance</h3>
+                <p>Concerned about copyright issues related to music on our platform? Our legal team can provide guidance and assistance regarding song copyright matters.</p>
+            </div>
+            <div class="service">
+                <h3>Audio Playback Issues</h3>
+                <p>If you're unable to hear audio properly while using our platform, our support team can help diagnose and resolve any audio playback issues you may encounter.</p>
+            </div>
+            <!-- Add more services as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mewsick. All rights reserved.</p>
+    </footer>
+</body>
+</html>
